@@ -1,0 +1,462 @@
+body {
+    margin : 0;
+    background-image: url(images/fondecran.png);
+    background-attachment: fixed;
+    background-size: 500px;
+    font-family: Roboto-Regular, arial, sans-serif;
+}
+
+/* Bandeau NAV*/
+.haut {
+    margin: auto;
+    background-color: #7c7b7b;
+}
+
+.logo img {
+    margin-left: 22px;
+    margin-bottom: 10px;
+    width:600px;
+    height:100px; 
+}
+
+.panier {
+    margin-left: 5px;
+    width: 20px;
+}
+
+.menu {
+    width:100%;
+    background: #555;
+    display: inline-block;
+    min-width: 640px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li {
+    display: flex;
+    position: relative;
+    float: left;
+}
+
+.menu .droite {
+    float: right;
+}
+
+.menu li ul {
+    display: none;
+    min-width: 150px;
+}
+
+.menu ul li a {   
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    background: #555;
+    white-space: nowrap;
+    opacity: 0.90;
+}
+
+.menu ul li a:hover {
+    background: #7c7b7b;
+}
+
+.menu li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+.menu li:hover li {
+    display: block;
+    float: none;
+}
+
+.menu li:hover a {
+    background: #7c7b7b;
+    padding-left: 8px;
+} 
+
+.menu li:hover li a:hover {
+    background-color: #676666;
+    color: #333;
+    padding-left: 15px;
+}
+
+#input {
+    display:flex;
+    margin-left: 6px;
+    background-color: transparent;
+}
+
+#imgico {
+    display: flex;
+    margin-left: 8px;
+}
+
+.recherche img {
+    width: 20px;
+    height: 20px;
+}
+
+.header {
+    margin-left: 0;
+    margin-right: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.droite {
+    padding-top : 2px;
+    padding-right : 5px;
+    padding-left : 5px;
+    border-radius: 2px;
+}
+
+.droite img {
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+nav {
+    margin: auto;
+    padding: 4px;
+    font-family: Roboto-Regular, arial, sans-serif;
+    font-size: 18px;
+    background-color: #333;
+    box-shadow: 0px 2px 10px black;
+    border-top-color: rgba(62, 61, 61, 0.42);
+    text-shadow: 1px 1px 1px #333;
+    border-top-style: outset;
+    border-top-width: 0.1px;   
+}
+
+nav ul {
+    padding : 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:white;
+    list-style-type:none;
+}
+
+nav ul li ul li a {
+    display: flex;
+    flex-direction:row;
+    padding: 4px;
+    margin-left: 10px;
+}
+
+
+
+/* Tout le bloc central */
+.bloc_milieu {
+    margin-top: 180px;
+    margin-right: 100px;
+    margin-left:100px;
+    margin-bottom: 100px;
+    background-color: white;
+    box-shadow: 5px 5px 20px #333;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+/*Bandeau A la une/promotion */
+.hautdepage {
+    background-color: #aca780;
+    margin-right: 0;
+}
+
+.actualite{
+    position: right;
+    display: flex;
+}
+
+.promotion {
+    margin: 0;
+    padding: 0;
+    float:left;   
+    height: 308px;
+}
+
+.promotion ul {
+    margin: 0;
+    padding: 0;
+}
+
+.promotion li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.promotion ul li figure {
+    padding: 0;
+    margin: 0;
+}
+
+.promotion ul li figure img {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+
+img.bandeau:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 1px 10px #333;
+}
+
+#cssSlider {
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    margin: 4px;
+}
+
+#sliderImages {
+    width : 4000px;
+    height: 300px;
+    overflow: hidden;
+    /*/https://codepen.io/cybrox/pen/cyiJI/
+    animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
+    animation: slide 16s infinite;
+    -moz-animation: slide 16s infinite;
+    -webkit-animation: slide 16s infinite;
+    -o-animation: slide 16s infinite;
+}
+
+#sliderImages img {
+    float: left;
+}
+
+@keyframes slide {
+    0%{margin-left: 0px;}
+    17%{margin-left: 0px;}
+    20%{margin-left: -800px;}
+    37%{margin-left: -800px;}
+    40%{margin-left: -1600px;}
+    57%{margin-left: -1600px;}
+    60%{margin-left: -2400px;}
+    77%{margin-left: -2400px;}
+    80%{margin-left: -3200px;}
+    97%{margin-left: -3200px;}
+    100%{margin-left: 0px;}
+}
+
+@-moz-keyframes slide {
+    0%{margin-left: 0px;}
+    17%{margin-left: 0px;}
+    20%{margin-left: -800px;}
+    37%{margin-left: -800px;}
+    40%{margin-left: -1600px;}
+    57%{margin-left: -1600px;}
+    60%{margin-left: -2400px;}
+    77%{margin-left: -2400px;}
+    80%{margin-left: -3200px;}
+    100%{margin-left: -3200px;}
+}
+
+@-webkit-keyframes slide {
+    0%{margin-left: 0px;}
+    17%{margin-left: 0px;}
+    20%{margin-left: -800px;}
+    37%{margin-left: -800px;}
+    40%{margin-left: -1600px;}
+    57%{margin-left: -1600px;}
+    60%{margin-left: -2400px;}
+    77%{margin-left: -2400px;}
+    80%{margin-left: -3200px;}
+    100%{margin-left: -3200px;}
+}
+
+@-o-keyframes slide {
+    0%{margin-left: 0px;}
+    17%{margin-left: 0px;}
+    20%{margin-left: -800px;}
+    37%{margin-left: -800px;}
+    40%{margin-left: -1600px;}
+    57%{margin-left: -1600px;}
+    60%{margin-left: -2400px;}
+    77%{margin-left: -2400px;}
+    80%{margin-left: -3200px;}
+    100%{margin-left: -3200px;}
+}
+
+
+/* Catalogue */
+
+#catalogue {
+    display: inline-block;
+    text-align: center;
+    font-family: Gameshow, arial, monospace, sans-serif;
+    width: 100%;
+    color: #454545;
+    background-image: linear-gradient(60deg, #454545, #aca780);
+    margin-top: 30px;
+    padding-bottom: 2px;
+    padding-top: 4px;
+    text-shadow: 1px 0.5px 1px #eaeaea;
+    box-shadow: 0px 0.9px 1px #333;
+}
+#catalogue img
+{
+    width: 50%
+}
+
+.categorie h2 {
+    color: #454545;
+    text-align: center;
+    font-family: Gameshow, arial, monospace, sans-serif;
+    font-size: 40px;
+    font-variant: small-caps;
+    background-color: #adadad;
+    box-shadow: 0 40px 100px 10px #FFF, 0 12px 10px -10px rgba(0, 0, 0, 1);
+    text-shadow: 1px 0.5px 1px #eaeaea;
+}
+
+.jaquette {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: outset;
+    border-color: #a8a6a6 #333 #191919 #555;
+    border-radius: 5px;
+}
+
+img.jaquette:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px black;
+}
+
+.jeux {
+    margin-left: 14%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+#action article {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    display: inline-block;
+}
+
+#action article p {
+    margin-top: 0;
+    text-align: center;
+    font-family: fantasy;
+    color: #555;
+}
+
+#strategie article {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    display: inline-block;    
+}
+
+#strategie article p {
+    margin-top: 0;
+    text-align: center;
+    font-family: fantasy;
+    color: #555;
+}
+
+#course article {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    display: inline-block;    
+}
+
+#course article p {
+    margin-top: 0;
+    text-align: center;
+    font-family: fantasy;
+    color: #555;
+}
+
+#simulation article {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    display: inline-block;    
+}
+
+#simulation article p {
+    margin-top: 0;
+    text-align: center;
+    font-family: fantasy;
+    color: #555;
+}
+
+#rpg article {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    display: inline-block;    
+}
+
+#rpg article p {
+    margin-top: 0;
+    text-align: center;
+    font-family: fantasy;
+    color: #555;
+}
+
+#sport article {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    display: inline-block;    
+}
+
+#sport article p {
+    margin-top: 0;
+    text-align: center;
+    font-family: fantasy;
+    color: #555;
+}
+
+
+/* Pied de page */
+footer {
+    padding: 10px;
+    background-color: black;
+    opacity: 0.90;
+    color: white; 
+    text-decoration: none;
+    font-family: Roboto-Regular, arial, sans-serif;
+    text-align: center;
+}
+
+#settings img {
+    width: 20px;
+    margin-left: 10px
+}
+
+#reseaux img {
+    width: 40px;
+    margin: 10px;
+    
+}
+
+@font-face {
+    font-family: 'Gameshow';
+    src: url('Gameshow.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

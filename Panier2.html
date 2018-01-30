@@ -1,0 +1,91 @@
+<! DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <style type="text/css">
+        </style>
+        <title>GameWorld - Panier2</title>
+    </head>
+	
+    <body>
+    <header class="header">
+        <figure class="haut">
+            <a class="logo" href="main.html"><img src="images/logo.png" alt="logo GameWorld" /></a>
+        </figure>
+        
+        <nav class="menu">
+            <ul>
+                <li>Jeux
+                    <ul>
+                        <li><a href="#action">Action</a></li>
+                        <li><a href="#strategie">Stratégie</a></li>
+                        <li><a href="#course">Courses</a></li>
+                        <li><a href="#simulation">Simulation</a></li>
+                        <li><a href="#rpg">RPG</a></li>
+                        <li><a href="#sport">Sport</a></li>
+                    </ul>
+                </li>
+                <li>Consoles
+                    <ul>
+                        <li><a href="main.html">PS4</a></li>
+                        <li><a href="main.html">XBOX ONE</a></li>
+                        <li><a href="main.html">SWITCH</a></li>
+                        <li><a href="main.html">PC</a></li>
+                    </ul>
+                </li>
+                <li class="recherche">Recherche
+                    <form id="input">        
+                            <input type="search" />
+                            <a id="imgico" href="fiche_produit.html"><img src="images/loupe.png" alt="recherche" /></a>
+                    </form>
+                </li>
+                <li class="droite">
+                        Mon panier <a href="Panier1.html"><img src="images/panierlanc.png" alt="panier" /></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+	
+	<aside>
+        <form action="Achateffectue.html" method="POST">
+		<fieldset>
+			<legend>Vos coordonées</legend>
+			<label>Nom: <input name="Nom"></label><br>
+			<label>Prénom: <input name="Prenom"></label><br>
+			<label>Adresse: <input name="Adresse"></label><br>
+			<label>Carte bancaire: <input name="Cartebancaire"></label><br>
+			<input type="submit" value="Payer">
+		</fieldset>
+		</form>
+	</aside>
+	<div>
+		<span><a href="fiche_produit.html"><img src="images/imagejeux.jpg" /></a></span>
+		<p>Counter-Strike: Global Offensive (CS: GO) étend le genre du jeu d'action dont Counter-Strike fut le pionnier lors de sa sortie, il y a plus de 12 ans. CS: GO comprend de nouvelles cartes, de nouveaux personnages, de nouvelles armes et met à jour les classiques</p>
+		<table>
+            <tr>
+				<th>Prix uniaires</th>
+				<th>Quantités</th>
+				<th>Livraison</th>
+				<th>Prix TTC</th>
+				<th>Remise</th>
+				<th>Total</th>
+			</tr>
+			<tr>
+				<td>45.99€</td>
+				<td>1</td>
+				<td>4€</td>
+				<td>49.99€</td>
+				<td>-20€</td>
+				<td>29.99€</td>
+        </table>
+    </div>
+	
+    <footer>
+        <p>Site à but non lucratif réalisé dans le cadre d'un projet d'étude en IUT ASPE Lyon 1</p>
+        <p>Auteurs : Julien Frillici et Tayfun Ozturk</p>
+        <div><a href="contact.html">Contact</a></div>
+        <div><a href="Detailstechnique.html">Détails techniques</a></div>
+    </footer>
+    </body>
+</html>
