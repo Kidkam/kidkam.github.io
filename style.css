@@ -524,7 +524,6 @@ footer {
 }
 
 .ajouter_panier input {
-    
     margin-top: 10px;
     font-family: SinkinSans-XLight, arial, monospace, sans-serif;
 }
@@ -590,6 +589,7 @@ footer {
     border: 1px solid black;
     text-align: center;
 }
+
 
 /* CSS page "Achateffectue" */
 .texte_info {
