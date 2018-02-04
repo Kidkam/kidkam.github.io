@@ -3,7 +3,7 @@ body {
     background-image: url(images/fondecran.png);
     background-attachment: fixed;
     background-size: 500px;
-    font-family: Roboto-Regular, arial, sans-serif;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
 }
 
 /* Bandeau NAV*/
@@ -29,6 +29,7 @@ body {
     background: #555;
     display: inline-block;
     min-width: 640px;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
 }
 
 .menu ul {
@@ -88,7 +89,7 @@ body {
 
 #input {
     display:flex;
-    margin-left: 6px;
+    margin-left: 8px;
     background-color: transparent;
 }
 
@@ -120,12 +121,13 @@ body {
     margin-left: 8px;
     width: 20px;
     height: 20px;
+    
 }
 
 nav {
     margin: auto;
     padding: 4px;
-    font-family: Roboto-Regular, arial, sans-serif;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
     font-size: 18px;
     background-color: #333;
     box-shadow: 0px 2px 10px black;
@@ -203,7 +205,7 @@ nav ul li ul li a {
 .promotion ul li figure img {
     padding: 0;
     margin: 0;
-    width: 300px;
+    width: 295px;
 }
 
 img.bandeau:hover {
@@ -293,19 +295,18 @@ img.bandeau:hover {
 #catalogue {
     display: inline-block;
     text-align: center;
-    font-family: Gameshow, arial, monospace, sans-serif;
     width: 100%;
     color: #454545;
-    background-image: linear-gradient(60deg, #454545, #aca780);
     margin-top: 30px;
     padding-bottom: 2px;
     padding-top: 4px;
-    text-shadow: 1px 0.5px 1px #eaeaea;
     box-shadow: 0px 0.9px 1px #333;
+    background: repeating-radial-gradient(circle, #7c7b7b, #7c7b7b 10px, #717070 10px, #717070 20px);
 }
+
 #catalogue img
 {
-    width: 50%
+    width: 50%;
 }
 
 .categorie h2 {
@@ -350,7 +351,7 @@ img.jaquette:hover {
 #action article p {
     margin-top: 0;
     text-align: center;
-    font-family: fantasy;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
     color: #555;
 }
 
@@ -364,7 +365,7 @@ img.jaquette:hover {
 #strategie article p {
     margin-top: 0;
     text-align: center;
-    font-family: fantasy;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
     color: #555;
 }
 
@@ -378,7 +379,7 @@ img.jaquette:hover {
 #course article p {
     margin-top: 0;
     text-align: center;
-    font-family: fantasy;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
     color: #555;
 }
 
@@ -392,7 +393,7 @@ img.jaquette:hover {
 #simulation article p {
     margin-top: 0;
     text-align: center;
-    font-family: fantasy;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
     color: #555;
 }
 
@@ -406,7 +407,7 @@ img.jaquette:hover {
 #rpg article p {
     margin-top: 0;
     text-align: center;
-    font-family: fantasy;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
     color: #555;
 }
 
@@ -420,7 +421,7 @@ img.jaquette:hover {
 #sport article p {
     margin-top: 0;
     text-align: center;
-    font-family: fantasy;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
     color: #555;
 }
 
@@ -432,9 +433,10 @@ footer {
     opacity: 0.90;
     color: white; 
     text-decoration: none;
-    font-family: Roboto-Regular, arial, sans-serif;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
     text-align: center;
-}
+    background: repeating-radial-gradient(circle, #7c7b7b, #7c7b7b 10px, #717070 10px, #717070 20px);
+    }
 
 #settings img {
     width: 20px;
@@ -447,16 +449,199 @@ footer {
     
 }
 
+/* font families */
 @font-face {
     font-family: 'Gameshow';
-    src: url('Gameshow.ttf');
+    src: url('font/Gameshow.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url('Roboto-Regular.ttf');
+    src: url('font/Roboto-Regular.ttf');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'SinkinSans-Thin';
+    src: url('font/SinkinSans-100Thin.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SinkinSans-XLight';
+    src: url('font/SinkinSans-200XLight.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SinkinSans-Regular';
+    src: url('font/SinkinSans-400Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* CSS de la page "fiche_produit" */
+
+#titre_jeu {
+    color: #454545;
+    text-align: center;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
+    font-size: 150%;
+    font-variant: small-caps;
+    background-color: #adadad;
+    box-shadow: 0 40px 100px 10px #FFF, 0 12px 10px -10px rgba(0, 0, 0, 1);
+    text-shadow: 1px 0.5px 1px #eaeaea;
+}
+
+#conteneur {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.element:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.element:nth-child(2) {
+    flex: 1;
+    background-color: #aca780;
+    margin-bottom: 17px;
+}
+
+.element:nth-child(3) {
+    padding: 20px;
+    background-image: linear-gradient(white, #adadad);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ajouter_panier input {
+    
+    margin-top: 10px;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
+}
+
+/* CSS de la page "Panier2" */
+.titre_panier {
+    color: #454545;
+    text-align: center;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
+    font-size: 150%;
+    font-variant: small-caps;
+    background-color: #adadad;
+    box-shadow: 0 40px 100px 10px #FFF, 0 12px 10px -10px rgba(0, 0, 0, 1);
+    text-shadow: 1px 0.5px 1px #eaeaea;
+}
+
+#conteneur2 {
+    display : flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.element2:nth-child(1) {
+    order: 3;
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(white, #adadad);
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+.element2:nth-child(2) {
+    display: flex;
+    order: 1;
+    background-color: #aca780;
+    padding: 10px;
+    box-shadow: 0px 2px 10px black;
+}
+
+.element2:nth-child(2) p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.element2:nth-child(3) {
+    order: 2;
+    flex: 1;
+    margin:20px;
+}
+
+.tarifs {
+    border-collapse: collapse;
+}
+
+.tarifs td {
+    border: 1px solid black;
+    text-align: center;
+    width: 100px; 
+}
+
+.tarifs tr{
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* CSS page "Achateffectue" */
+.texte_info {
+    width: 1080px;
+    padding: 10px;
+    background-color: #aca780;
+    text-align: center;
+    box-shadow: 0px 2px 10px black;
+}
+
+/* CSS page "Quisommesnous" */
+.texte_info2 {
+    width: 1080px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    background-color: #aca780;
+    text-align: left;
+}
+
+/* CSS page "Detailstechniques" */
+.sous_titre_panier {
+    padding-left: 20px;
+    color: #454545;
+    text-align: left;
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
+    font-size: 120%;
+    font-variant: small-caps;
+    background-color: #adadad;
+    text-shadow: 1px 0.5px 1px #eaeaea;
+}
+
+/* CSS page "contact" */
+.fiche_contact {
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
+    width: 1080px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    background-color: #aca780;
+    text-align: left;
+}
+
+.fiche_contact label {
+	display: block;
+	width: 150px;
+	float: left;
+}
+
+.fiche_contact input {
+    border-width: 2.5px; 
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
 }
