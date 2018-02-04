@@ -633,6 +633,7 @@ footer {
     margin-bottom: 30px;
     background-color: #aca780;
     text-align: left;
+    background-image: linear-gradient(white, #aca780);
 }
 
 .fiche_contact label {
