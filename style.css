@@ -224,8 +224,6 @@ img.bandeau:hover {
     width : 4000px;
     height: 300px;
     overflow: hidden;
-    /*/https://codepen.io/cybrox/pen/cyiJI/
-    animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
     animation: slide 16s infinite;
     -moz-animation: slide 16s infinite;
     -webkit-animation: slide 16s infinite;
@@ -526,6 +524,7 @@ footer {
 .ajouter_panier input {
     margin-top: 10px;
     font-family: SinkinSans-XLight, arial, monospace, sans-serif;
+    text-align: left;
 }
 
 /* CSS de la page "Panier2" */
@@ -644,5 +643,29 @@ footer {
 
 .fiche_contact input {
     border-width: 2.5px; 
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
+}
+
+
+/* CSS des pages panier */
+.fiche_panier {
+    font-family: SinkinSans-XLight, arial, monospace, sans-serif;
+    width: 1080px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    background-image: linear;
+}
+
+.fiche_panier label {
+	display: block;
+	width: 200px;
+	float: left;
+}
+
+.fiche_panier input {
+    border-width: 2.1px; 
     font-family: SinkinSans-XLight, arial, monospace, sans-serif;
 }
