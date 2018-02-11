@@ -1,11 +1,19 @@
+<!-- index.html = page principale : 
+Affichage bandeau navigation,
++ Carrousel d'images (jeux à la une),
++ bandeau promotions et prochaines sorties,
++ catalogue -->
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" type="image/png" href="images/favicon.png" />
-        <style type="text/css">
-        </style>
+        
+        <meta name="description" content="Site marchand de vente de jeux video">
+        
+        <style type="text/css"></style>
         <title>GameWorld</title>
     </head>
     
@@ -39,72 +47,72 @@
                 <li class="recherche">Recherche
                     <form id="input">        
                             <input type="search" />
-                            <a id="imgico" href="fiche_produit.html"><img src="images/loupe.png" alt="recherche" /></a>
+                            <a id="imgico" href="ficheProduit.html"><img src="images/loupe.png" alt="recherche" /></a>
                     </form>
                 </li>
                 <li class="droite">
-                        Mon panier <a href="Panier1.html"><img src="images/panierlanc.png" alt="panier" /></a>
+                        Mon panier <a href="panier1.html"><img src="images/panierlanc.png" alt="panier" /></a>
                 </li>
             </ul>
         </nav>
     </header>
     
-    <section class="bloc_milieu">
-        <section class="hautdepage">
-            <section class="promotion">
+    <div class="bloc_milieu">
+        <div class="hautdepage">
+            <div class="promotion">
                 <ul>
                     <li>
                         <figure>
-                            <a href="fiche_produit.html"><img class="bandeau" src="images/promo_mario.png" alt="promotion" /></a>
+                            <a href="ficheProduit.html"><img class="bandeau" src="images/promo_mario.png" alt="promotion" /></a>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <a href="fiche_produit.html"><img class="bandeau" src="images/GoW.png" alt="promotion" /></a>
+                            <a href="ficheProduit.html"><img class="bandeau" src="images/GoW.png" alt="promotion" /></a>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <a href="fiche_produit.html"><img class="bandeau" src="images/DBZ.png" alt="promotion" /></a>
+                            <a href="ficheProduit.html"><img class="bandeau" src="images/DBZ.png" alt="promotion" /></a>
                         </figure>
                     </li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="actualite">
+            <div class="actualite">
                 <div id="cssSlider">
                   <div id="sliderImages">
-                        <a href="fiche_produit.html"><img id="si_1" src="images/banniererick.png" alt="banniere de jeu Rick et Morty" /></a>
-                        <a href="fiche_produit.html"><img id="si_2" src="images/banniereHS.png" alt="banniere de jeu HearthStone" /></a>
-                        <a href="fiche_produit.html"><img id="si_3" src="images/bannieremarvel.png" alt="banniere de jeu Marvel vs Capcom" /></a>
-                        <a href="fiche_produit.html"><img id="si_4" src="images/banniereCallofduty.png" alt="banniere de jeu call of duty" /></a>
-                        <a href="fiche_produit.html"><img id="si_5" src="images/bannierWitcher.jpg" alt="banniere de jeu Witcher 3" /></a>
+                        <a href="ficheProduit.html"><img id="si_1" src="images/banniererick.png" alt="banniere de jeu Rick et Morty" /></a>
+                        <a href="ficheProduit.html"><img id="si_2" src="images/banniereHS.png" alt="banniere de jeu HearthStone" /></a>
+                        <a href="ficheProduit.html"><img id="si_3" src="images/bannieremarvel.png" alt="banniere de jeu Marvel vs Capcom" /></a>
+                        <a href="ficheProduit.html"><img id="si_4" src="images/banniereCallofduty.png" alt="banniere de jeu call of duty" /></a>
+                        <a href="ficheProduit.html"><img id="si_5" src="images/bannierWitcher.jpg" alt="banniere de jeu Witcher 3" /></a>
                         <div style="clear:left;"></div>
                     </div>
                 </div>
-            </section>
-        </section>
+            </div>
+        </div>
         
         <div id="catalogue"><img src="images/catalogue.png" alt="catalogue" /></div>
-        <section class="categorie">
+        <div class="categorie">
             <section id="action">
                 <h2>- ACTION -</h2>
                     <div class="jeux">    
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>69,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>69,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>69,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>69,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>45,00€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p>
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>45,00€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p>
                         </article>
                     </div>
             </section>
@@ -112,20 +120,20 @@
                 <h2>- STRATEGIE - </h2>
                     <div class="jeux">
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p>
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p>
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                      </article>
                     </div>
             </section>
@@ -133,20 +141,20 @@
                 <h2>- COURSE -</h2>
                     <div class="jeux">
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p>
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p>
                         </article>
                     </div>
             </section>
@@ -154,20 +162,20 @@
                 <h2>- SIMULATION -</h2>
                     <div class="jeux">
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                             </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                                <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
-                                <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                                <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
+                                <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                     </div>
             </section>
@@ -175,20 +183,20 @@
                 <h2>- RPG -</h2>
                     <div class="jeux">
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                             </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                     </div>
             </section>
@@ -196,31 +204,32 @@
                 <h2>- SPORT -</h2>
                     <div class="jeux">
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteRD2.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMonster_Hunter_World.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p> 
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/jaquetteKingdom_Hearts_III.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p> 
                         </article>
                         <article>
-                            <a href="fiche_produit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
-                            <p>49,99€ |<a href="Panier1.html"><img class="panier" src="images/panier.png" alt="panier" /></a></p>
+                            <a href="ficheProduit.html"><img class="jaquette" src="images/JaquetteMetro_Exodus.jpg" alt="jaquette_jeux"/></a><br />
+                            <p>49,99€ |<a href="panier2.html"><img class="panier" src="images/panier.png" alt="ajout au panier" /></a></p>
                         </article>
                     </div>
             </section>
-        </section>
-    </section>
+        </div>
+    </div>
             
     <footer>
         <p>Site à but non lucratif réalisé dans le cadre d'un projet d'étude en IUT ASPE Lyon 1</p>
         <p>Auteurs : Julien Frillici et Tayfun Ozturk</p>
         <p><a href="contact.html">Contact</a></p>
-        <p id="settings"><a href="Detailstechnique.html">Détails techniques <img src="images/settings.png" alt="settings" /></a></p>
+        <p><a href="aPropos.html">Qui sommes nous ?</a></p>
+        <p id="settings"><a href="detailsTechnique.html">Détails techniques <img src="images/settings.png" alt="settings" /></a></p>
         <p id="reseaux"><a href="https://www.facebook.com/"> <img src="images/facebook.png" alt="facebook" /></a><a href="https://twitter.com/"><img src="images/Twitter.png" alt="twitter"/></a></p>
     </footer>
         

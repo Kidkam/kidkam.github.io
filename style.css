@@ -523,8 +523,12 @@ footer {
 
 .ajouter_panier input {
     margin-top: 10px;
+    padding: 4px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    width: 150px;
     font-family: SinkinSans-XLight, arial, monospace, sans-serif;
-    text-align: left;
 }
 
 /* CSS de la page "Panier2" */
